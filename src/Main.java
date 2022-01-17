@@ -13,7 +13,7 @@ public class Main {
         d) niech w pętli są podawane wartości liczbowe z klawiatury,
         e) jeśli użytkownik poda z klawiatury 0 to program ma kończyć działanie,
         f) umieścić w pętli switch() case: które będą wypisywały cyfry słownie odpowiednio
-        do podanych cyfr przez użytkownika,
+        do podanych cyfr przez użytkownika,d
         g) gdy użytkownik wciśnie 0 ma wyświetlić się status KONIEC w innym wypadku KONTYNUUJEMY :),
         */
         enum LiczbyEnum {Jeden, Dwa, Trzy, Cztery, Piec, Szesc}
