@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -14,5 +15,26 @@ public class Main {
             c) wyświetlić dane z tablicy, użyć pętli for lub forEach
             d) dane powinny być estetycznie przedstawione
          */
+        Student student1 = new Student();
+        student1.imie = "Pawel";
+        student1.man = true;
+
+        Student student2 = new Student();
+        student2.imie = "Martyna";
+        student2.man = false;
+
+        Student student3 = new Student();
+        student3.imie = "Adam";
+        student3.man = true;
+
+
+        Student[] ArrayforObjects = new Student[]{student1, student2, student3};
+        for (int i = 0; i < 3; ++i) {
+            System.out.println(ArrayforObjects[i]);
+
+            //System.out.println(Arrays.deepToString(ArrayForObjects));
+        }
     }
+
+
 }
