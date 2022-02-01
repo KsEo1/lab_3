@@ -3,12 +3,41 @@ public class Main {
     public static void main(String[] args) {
         /* ćw 4 klasy */
 
+        Osoba Neo = new Osoba("Pawel", "Leszczynski", 5);
+        student student1 = new student(Neo, Wydzial.WydzialEnum.Informatyka);
+
+        Osoba Trinity = new Osoba("Kuba", "Leszczynski", 2);
+        student student2 = new student(Trinity, Wydzial.WydzialEnum.Chemia);
+
+        Osoba Morpheus = new Osoba("Karol", "Leszczynski", 3);
+        student student3 = new student(Morpheus, Wydzial.WydzialEnum.Ekonomia);
+
+        Osoba Smith = new Osoba("Oskar", "Leszczynski", 4);
+        student student4 = new student(Smith, Wydzial.WydzialEnum.Fizyka);
+
+        Osoba Architect = new Osoba("Michał", "Leszczynski", 5);
+        student student5 = new student(Architect, Wydzial.WydzialEnum.Matematyka);
+
+
+
+        ArrayList<student> lStudentow = new ArrayList<student>();
+        lStudentow.add(student1);
+        lStudentow.add(student2);
+        lStudentow.add(student3);
+        lStudentow.add(student4);
+        lStudentow.add(student5);
+
+        for (student i : lStudentow) {
+            System.out.println(i.student());
+        }
+
+
+
         /* zad.1
             a) Stworzyć klasę Osoba z polami prywatnymi:
             - imie (String),
             - nazwisko (String),
             - indeks (Integer)
-
             b) stworzyc konstruktory, gettery i settery
             c) napisać metodę w klasie Osoba która zwróci informację o osobie,
          */
